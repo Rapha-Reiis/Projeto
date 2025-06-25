@@ -14,10 +14,10 @@ public class Coffe {
     }
 
     public void serve(String size, int sugar) {
-        System.out.println("Serving " + name +
-            " (" + description + "), size: " + size +
-            ", sugar: " + sugar + " spoon(s)" +
-            ", base price: $" + basePrice +
-            ", contains milk: " + (containsMilk ? "Yes" : "No"));
+        System.out.println("\n Serving " + name + 
+            "| Descrição: " + description + "), Tamanho: " + size +
+            ", Açucar: " + sugar + " spoon(s)" +
+            ", Preço base: $" + basePrice +
+            ", contains milk: " + (containsMilk ? "Yes" : "No\n" ));
     }
 }

@@ -9,16 +9,17 @@ public class CoffeFactory {
     private static int totalCreated = 0;
 
     public static Coffe getCoffeType(String type) {
+
         if (!types.containsKey(type)) {
             System.out.println("Criando novo tipo de café: " + type);
             switch (type) {
-                case "espresso":
+                case "Espresso":
                     types.put(type, new Coffe("Espresso", "Café forte e concentrado", 5.00, false));
                     break;
-                case "cappuccino":
+                case "Cappuccino":
                     types.put(type, new Coffe("Cappuccino", "Café com leite e espuma", 6.50, true));
                     break;
-                case "latte":
+                case "Latte":
                     types.put(type, new Coffe("Latte", "Café suave com bastante leite", 6.00, true));
                     break;
                 default:
@@ -27,7 +28,6 @@ public class CoffeFactory {
             }
             totalCreated++;
         }
-
         return types.get(type);
     }
 
